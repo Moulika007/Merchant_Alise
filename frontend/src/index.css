@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f0f0f;
+    --card: #ffffff;
+    --card-foreground: #0f0f0f;
+    --primary: #0f0f0f;
+    --primary-foreground: #ffffff;
+    --accent: #f7f7f5;
+    --accent-foreground: #0f0f0f;
+    --muted: #f7f7f5;
+    --muted-foreground: #6b7280;
+    --border: #e5e5e5;
+    --input: #e5e5e5;
+    --ring: #0f0f0f;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    /* Dot Grid Background */
+    background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: center;
+  }
+}
